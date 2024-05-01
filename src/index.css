@@ -1,0 +1,215 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: clip;
+  height: 100vh;
+  color: rgba(240, 248, 255, 1);
+  text-shadow: black 1px 0 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background: url("./assets/meadow.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  max-width: 350px;
+  min-height: min-content;
+  font-family: "Roboto", sans-serif;
+}
+
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.search-box input {
+  color: rgba(240, 248, 255, 1);
+  max-width: 80%;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.search-box input::placeholder {
+  color: rgba(240, 248, 255, 0.7);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+.search-box button {
+  cursor: pointer;
+  max-width: 50px;
+  max-height: 50px;
+  background: none;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
+  border: none;
+  color: #fff;
+}
+
+.search-box button:hover {
+  color: #818181;
+}
+
+.search-box .magniglass {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.search-box .location-dot {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.search-box .location-dot:hover {
+  color: #818181;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box img {
+  max-width: 60%;
+  max-height: 60%;
+  margin-top: 30px;
+}
+
+.weather-box .temperature {
+  position: relative;
+
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+  margin-bottom: auto;
+}
+
+.weather-box .temperature span {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: auto;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.weather-details .humidity {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather-details .wind {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details .icon {
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.weather-details span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+  display: none;
+}
+
+.not-found img {
+  width: 70%;
+}
+
+.not-found p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
