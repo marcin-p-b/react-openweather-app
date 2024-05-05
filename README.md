@@ -1,9 +1,9 @@
-# React + Vite
+# A SPA that uses OpenWeather API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/marcin-p-b/react-openweather-app/assets/162914885/2efacaa8-5fec-4438-bc62-b5974866a925)
 
-Currently, two official plugins are available:
+After a location is given, a card with description regarding current weather conditions is displayed to the user. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# react-openweather-app
+![image](https://github.com/marcin-p-b/react-openweather-app/assets/162914885/0bbb986e-324a-4140-9afd-832b4cd41a45)
+
+It has also geolocation if the user's web browser allows it. Instead of typing the city, current weather conditions are displayed after clicking the map marker in the upper-left corner of a weathercard.
